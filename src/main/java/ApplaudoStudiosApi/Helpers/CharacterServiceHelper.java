@@ -20,7 +20,7 @@ public class CharacterServiceHelper
         RestAssured.useRelaxedHTTPSValidation();
     }
 
-    /*Method for get all characters an they information*/
+    /*Get all characters and their information*/
     public List<Character> getAllCharacter()
     {
         Response response = RestAssured.given().
@@ -32,12 +32,12 @@ public class CharacterServiceHelper
         return characterList;
     }
 
-    /*Get only once character*/
-    public Character getOnceCharacter(Integer id)
+    /*Get only one character*/
+    public Character getOneCharacter(Integer id)
     {
         Response response = RestAssured.given().
                 contentType(ContentType.JSON).pathParam("id",id).
-                get(Endpoints.GET_ONCE_CHARACTER).
+                get(Endpoints.GET_SPECIFIC_CHARACTER).
                 andReturn();
         Type type = new TypeReference<List<Character>>(){}.getType();
         List<Character> character = response.as(type);

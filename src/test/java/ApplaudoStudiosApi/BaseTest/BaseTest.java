@@ -8,9 +8,11 @@ public class BaseTest
 {
     protected CharacterServiceHelper characterServiceHelper;
     protected SoftAssert softAssert = new SoftAssert();
+
     @BeforeClass
     public void setUp()
     {
+
         characterServiceHelper = new CharacterServiceHelper();
     }
 }

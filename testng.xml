@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/home/anderson/IdeaProjects/ApplaudoStudiosApiDemo">
+    <test verbose="2" preserve-order="true" name="C:/Users/QIS26/IdeaProjects/APIAutomationProject">
         <classes>
-            <class name="ApplaudoStudiosApi.Tests.Get_All_Characters">
+            <class name="ApplaudoStudiosApi.Tests.TestGetAllCharacters">
                 <methods>
                     <include name="getAllCharacters"/>
                 </methods>
             </class>
-            <class name="ApplaudoStudiosApi.Tests.Get_Character_Individually">
+            <class name="ApplaudoStudiosApi.Tests.TestGetOneCharacter">
                 <methods>
                     <include name="getOneCharacter"/>
                 </methods>
