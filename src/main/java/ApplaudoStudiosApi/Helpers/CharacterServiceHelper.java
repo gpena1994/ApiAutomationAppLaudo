@@ -13,7 +13,7 @@ import java.util.List;
 
 public class CharacterServiceHelper
 {
-    private static final String BASE_URL = ConfigManager.getInstance().getString("baseURL");
+    private static final String BASE_URL = ConfigManager.getInstance().getString("base_URL");
     public CharacterServiceHelper()
     {
         RestAssured.baseURI = BASE_URL;
